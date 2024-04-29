@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>#1</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+</head>
+<style> 
+    #btn{
+        position: absolute;
+        left: 300px;
+        top: 50px;
+    }
+
+    h1{
+        position: absolute;
+        left: 320px;
+        top: 100px;
+    }
+
+</style>
+<body>
+    <input type="button" name="random" id="btn" value="random" onclick="randomnumbers()">
+    <h1 id="result"> </h1>
+</body>
+<script>
+
+    function randomnumbers(){
+        
+        const nmbr = Math.floor(Math.random() * 10);
+        document.getElementById("result").innerHTML = nmbr;
+
+        if(nmbr == 1 || nmbr == 3 || nmbr == 7 || nmbr == 9){
+            document.body.style.backgroundColor = "red";
+        }else if (nmbr == 0 || nmbr == 5 || nmbr == 10 ){
+            document.body.style.backgroundColor = "blue";
+        }else{
+            document.body.style.backgroundColor = "green";
+        }
+        
+        
+    }
+
+</script>
+</html>

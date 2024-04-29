@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asami</title>
+</head>
+<body>
+  <p>Current value: <span id="display">0</span></p>
+  <button id="addButton">Add 5</button>
+
+  <script>
+var num = 0;
+
+function addFive() {
+  num += 5;
+  document.getElementById('display').innerText = num;
+}
+
+document.getElementById('addButton').addEventListener('click', addFive);
+  </script>
+</body>
+</html>

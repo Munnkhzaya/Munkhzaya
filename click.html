@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>#4</title>
+<link rel="stylesheet" href="">
+<script src=""></script>
+</head>
+<style>
+#img1{
+position: absolute;
+left: 300px;
+top: 50px;
+width: 200px;
+height: 180px;
+background-color: aqua;
+}
+#img2{
+position: absolute;
+left: 520px;
+top: 50px;
+width: 200px;
+height: 180px;
+background-color: aquamarine;
+}
+#clip{
+position: absolute;
+left: 280px;
+top: 260px;
+width: 480px;
+height: 360px;
+background-color: bisque;
+}
+#voice{
+position: absolute;
+left: 280px;
+top: 260px;
+width: 480px;
+height: 360px;
+background-color: pink;
+}
+</style>
+<body>
+<div id="img1" onclick="clip()">
+<img src="/img/yor.jpg" alt="">
+</div>
+<div id="img2" onclick="voice()">
+<img src="/img/loid.jpg" alt="">
+</div>
+<div id="clip">
+VIDEO!
+<video width="460" controls >
+<source src="/video/song.mp4" type="video/mp4">
+<source src="/video/song.ogg" type="video/ogg">
+</video>
+</div>
+<div id="voice">
+VOICE!
+<audio width="460" controls>
+<source src="sound/biihuurhun.ogg" type="audio/ogg">
+<source src="sound/biihuurhun.mp3" type="audio/mpeg">
+</audio>
+</div>
+</body>
+<script>
+function clip() {
+document.getElementById("clip").style.display = "block";
+document.getElementById("voice").style.display = "none";
+}
+function voice() {
+document.getElementById("voice").style.display = "block";
+document.getElementById("clip").style.display = "none";
+}
+</script>
+</html>
