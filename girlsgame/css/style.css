@@ -1,0 +1,41 @@
+body{
+    background-color: #ffd1dc;
+}
+.bage{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-image: url(/img/bage.jpg);
+    width: 100px;
+    height: 100px;
+}
+
+.pink{
+    position: absolute;
+    left: 100px;
+    top: 210px;
+    background-image: url(/img/pink.jpg);
+    width: 100px;
+    height: 100px;
+
+}
+
+.brown{
+    position: absolute;
+    left: 100px;
+    top: 320px;
+    background-image: url(/img/brown.jpg);
+    width: 100px;
+    height: 100px;
+
+}
+
+.results{
+    position: absolute;
+    left: 220px;
+    top: 100px;
+    background-color: #f5a9cf;
+    width: 400px;
+    height: 400px;
+
+}
