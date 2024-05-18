@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        *{
+            background-color: palevioletred;
+        }
+        p{
+         position: absolute;
+         margin: 10px 100px;
+        }
+        /* "GOOD" үгийг цэнхэр өнгөтэй болгох */
+        .highlighted {
+            color: blue;
+        }
+
+        /* Курсор очиход "Here Im!" үгийг харуулах */
+        .hidden-text {
+            position: relative;
+        }
+    css pseudo selector in.html
+        .hidden-text:hover::after {
+            content: "Here Im!";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: yellow;
+            padding: 2px 5px;
+            border-radius: 3px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Im <i class="highlighted">GOOD</i> IT student. Im <i class="hidden-text">good</i> boy or girl.</p>
+</body>
+</html>
