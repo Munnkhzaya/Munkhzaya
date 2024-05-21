@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Атенагийн Кодлох Клуб</title>
+    <style>
+        .name {
+    background-color: lightgray;
+}
+
+#name1 {
+    background-color: lightblue;
+}
+
+div.name {
+    background-color: lightgreen;
+}
+
+#name2 {
+    background-color: lightyellow;
+}
+
+#name3 {
+    background-color: lightpink;
+}
+
+#name4 {
+    background-color: lightgoldenrodyellow;
+}
+
+#name5 {
+    background-color: lightseagreen;
+}
+
+/* Дотоод загвар нь HTML-д шууд нэмэгдсэн */
+
+    </style>
+</head>
+<body>
+    <h1>Атенагийн Кодлох Клуб</h1>
+    <div class="name" id="name1">Нэр 1</div>
+    <div class="name" id="name2">Нэр 2</div>
+    <div class="name" id="name3">Нэр 3</div>
+    <div class="name" id="name4">Нэр 4</div>
+    <div class="name" id="name5">Нэр 5</div>
+    <div class="name" id="name6">Нэр 6</div>
+</body>
+</html>
