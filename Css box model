@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Санамсаргүй YouTube Контент</title>
+    <style>
+        /* CSS энд байна */
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .video {
+            width: 100%;
+            height: 280px; /* 16:9 харьцаатай видео */
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .amazing-design {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Санамсаргүй YouTube Контент</h1>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+            Энэ видеог үзээрэй. Маш <span class="amazing-design">гайхалтай загвар</span> болон контентын мэдээлэлтэй!
+        </div>
+    </div>
+</body>
+</html>
