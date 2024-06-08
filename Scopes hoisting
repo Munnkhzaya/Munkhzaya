@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>homework</h2>
+
+
+<p id="demo1"></p>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let carName = "Athena coding club";
+  document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+}
+
+carName = " Khandmaa Munkhzaya" ;
+//const carName;
+document.getElementById("demo").innerHTML = carName;
+carAge = 15;
+document.getElementById("demo2").innerHTML = carAge;
+
+
+
+</script>
+
+</body>
+</html>
