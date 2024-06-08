@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title> JAVASCRIPT CLOSURES </title>
+  
+</head>
+<body>
+  <p id="URDUN"></p>
+  <button id="add button"></button>
+  <script>
+    function createmultiplier( Number){
+      let number=Number;
+      return function(){
+        if( number<1000000){
+          number*=5;
+          document.getElementById("URDUN").innerText="TOO"+number;
+        }else{
+          document.getElementById("URDUN").innerText="SUULIIN TOO"+number;
+          
+        }
+      }
+
+    }
+      const multiply=createmultiplier(1);
+      document.getElementById("add button").addEventListener("click",multiply);
+  </script>
+</body>
+</html>
