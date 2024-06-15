@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+<p>Wait 5 seconds for the time:</p>
+
+<h2 id="demo"></h2>
+<button id="stop">stop</button>
+
+<script>
+let time1= setTimeout(function background() {
+    document.body.style.backgroundColor = "pink";
+},1000);
+let time2= setTimeout(function background() {
+    document.body.style.backgroundColor = " deeppink";
+},2000);
+let time3= setTimeout(function background() {
+    document.body.style.backgroundColor = "lightpink";
+},3000);
+let time4= setTimeout(function background() {
+    document.body.style.backgroundColor = "lightpurple";
+},4000);
+let time5= setTimeout(function background() {
+    document.body.style.backgroundColor = "purple";
+},5000);
+
+document.getElementById("stop").onclick = function() {
+    clearTimeout(time1);
+    clearTimeout(time2);
+    clearTimeout(time3);
+    clearTimeout(time4);
+    clearTimeout(time5);
+};
+
+setInterval(myTimer, 5000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+
+</script>
+
+</body>
+</html>
